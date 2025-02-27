@@ -1,0 +1,40 @@
+/*comunes*/
+body{
+    background-color: #f7c548; 
+
+}
+/*footer*/
+footer{
+    background-color: #e7a60f91
+}
+footer a{
+    text-decoration: none;
+}
+
+/* footer a:hover{
+    color: black;
+} */
+
+
+/*pages*/
+
+/*index*/
+.display{
+    width: 100%;
+    height: 600px;
+    background-color: #f7c548 ; 
+}
+.item{
+    display: grid;
+    border: 5px solid black;
+    background-color: blue;
+    height: 200px;
+    
+
+
+}
+
+/*media Queries*/
+/* @media(min-with:480px){
+
+} */
