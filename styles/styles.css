@@ -20,7 +20,7 @@ footer a{
 
 /*index*/
 .display{
-    width: 100%;
+    width: auto;
     height: auto;
     background-color: #f7c548 ; 
     box-sizing: border-box;
@@ -45,18 +45,77 @@ footer a{
     text-align:justify;
 }
 
+/*eventos*/
+.eventos{
+    width: 80%;
+    display: grid;
+    margin: auto;
+    place-items: center;
+}
+.titulo{
+    display: grid;
+    margin: auto;
+    place-items: center;
+}
+/*display del texto sobre el carousel*/
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Contacto*/
+.forma{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    place-items: center;
+
+}
+
+
+
 /*media Queries*/
 @media(min-width:480px){
     .display{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2,auto);
-        .item3{
-            grid-column: 1/3;
-        }
-        .N3{
-            grid-column: 1/3;
-            
-        }
+    }
+    .item3{
+        grid-column: 1/3;
+    }
+    .N3{
+        grid-column: 1/3;
+        
     }
 
 }
@@ -64,6 +123,25 @@ footer a{
 @media(min-width:768px){
     .display{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(1,auto);
+        grid-template-rows: repeat(2,auto);
+        
     }
+    .item3{
+        grid-column: 3/4;
+    }
+    .N3{
+        grid-column: 3/4;
+        
+    }
+}
+
+@media(min-width:1024px){
+    .eventos{
+        width: 90%;
+        display: grid;
+        margin: auto;
+        place-items: center;
+        
+    }
+    
 }
